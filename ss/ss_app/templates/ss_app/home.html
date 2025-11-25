@@ -1,0 +1,29 @@
+{% extends "ss_app/base_1.html" %}
+{% load crispy_forms_tags %}
+<!-- Custom CSS -->
+{% load static %}
+<link rel="stylesheet" href="{% static 'all.css' %}">
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-dark text-white p-3">
+            <h5 class="text-warning">Feature Links</h5>
+            <hr class="border border-primary border-1 opacity-75">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href=""><i class="bi bi-book fs-3"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href=""><i class="bi bi-airplane-engines fs-3"></i> Parameter Definition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href=""><i class="bi bi-brilliance fs-3"></i> Parameter Definition LOV</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}
